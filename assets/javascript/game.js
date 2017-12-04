@@ -33,7 +33,6 @@ document.onkeyup = function(event) {
 
       if (userInput === computerChoice) {
         totalWins++;
-        updateHTML();
         initVals(false);
       }
       else
@@ -41,8 +40,7 @@ document.onkeyup = function(event) {
         totalRemGuesses--;
 
         if (totalRemGuesses === 0) {
-          totalLosses++
-          updateHTML();
+          totalLosses++;
           initVals(false)
         }
         // else nothing.
